@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+</head>
+<style>
+    .info{
+        border-radius: 1 px solid black;
+    }
+    .Contacto{
+        border-radius: 1 px solid black;
+    }
+    .Seguro{
+        border-radius: 1 px solid black;
+    }
+    .motivo{
+        border-radius: 1 px solid black;
+    }
+    .detalle{
+        border-radius: 1 px solid black;
+    }
+    .historial{
+        border-radius: 1 px solid black;
+    }
+    .consentimientos{
+        border-radius: 1 px solid black;
+    }
+    .metodo{
+        border-radius: 1 px solid black;
+    }
+</style>
+<body>
+    <form action="" method="post">
+        <h2>Informacion del paciente</h2>
+        <div class="info">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <br><br>
+            <label for="Apmat">Apellido Materno:</label>
+            <input type="text" name="Apmat" id="Apmat">
+            <br><br>
+            <label for="Appat">Apellido Paterno:</label>
+            <input type="text" name="Appat" id="Appat">
+            <br><br>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="Fecha" id="Fecha">
+            <br><br>
+            <label for="Genero">Genero:</label>
+            <select name="genero" id="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
+            <br><br>
+            <label for="Direccion">Direccion:</label>
+            <input type="text" name="Direccion" id="Direccion">
+            <br><br>
+            <label for="Num">Numero de telefono:</label>
+            <input type="number" name="tel" id="tel">
+            <br><br>
+            <label for="Correo">Correo Electronico:</label>
+            <input type="mail" name="correo" id="correo">
+            <br><br>
+            <label for="NSS">NSS:</label>
+            <input type="number" name="NSS" id="NSS">
+        </div>
+        <div class="Contacto">
+            <h2>Informacion de contacto de emergencia</h2>
+            <br><br>
+            <label for="N">Nombre de contacto:</label>
+            <input type="text" name="N" id="N">
+            <br><br>
+            <label for="parentesco">Parentesco:</label>
+            <input type="text" name="P" id="P">
+            <br><br>
+            <label for="NC">Numero de contacto:</label>
+            <input type="number" name="NN" id="NN">
+        </div>
+        <div class="Seguro">
+            <h2>Informacion de seguro medico</h2>
+            <br><br>
+            <label for="NCS">Aseguradora:</label>
+            <input type="text" name="NCS" id="NCS">
+            <br><br>
+            <label for="poliza">Numero de poliza:</label>
+            <input type="number" name="poliza" id="poliza">
+            <br><br>
+            <label for="Titular">Nombre del titular:</label>
+            <input type="text" name="titular" id="titular">
+            <br><br>
+            <label for="NT">Numero de telefono de la compañia de seguros:</label>
+            <input type="number" name="NT" id="NT">
+        </div>
+        <div class="motivo">
+            <h2>Motivo principal de la cita</h2>
+            <label for="Motivo">Motivo principal de la cita:</label>
+            <input type="text" name="Motivo" id="motivo">
+            <!--Breve descripcion del problema de salud o de la solicitud de la cita-->
+        </div>
+        <div class="detalle">
+            <h2>Detalles de la cita</h2>
+            <label for="fechacita">Fecha preferida para la cita:</label>
+            <input type="date" name="fechacita" id="fechacita">
+            <label for="hora">Hora preferida para la cita:</label>
+            <input type="time" name="hora" id="hora">
+            <label for="especialista">especialista</label>
+            <select name="especialista" id="especialista">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <label for="doctores">doctores</label>
+            <select name="doctores" id="doctores">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <label for="disponibilidad">disponibilidad</label>
+            <input type="text" name="disponibilidad" id="disponibilidad">
+        </div>
+        <div class="historial">
+            <h2>historial</h2>
+            <label for="Alergias">Alergias conocidas:</label>
+            <input type="text" name="Alergias" id="Alergias">
+            <label for="Medicamentos">Medicamentos actuales:</label>
+            <input type="text" name="Medicamentos" id="Medicamentos">
+            <label for="condiciones">Condiciones medicas preexistentes:</label>
+            <input type="text" name="Condiciones" id="Condiciones">
+            <label for="cirugias">Cirugias previas:</label>
+            <input type="text" name="Cirugias" id="Cirugias">
+            <label for="hospitalizaciones">Historial de hospitalizaciones:</label>
+            <input type="text" name="hospitalizaciones" id="hospitalizaciones">
+        </div>
+        <div class="consentimientos">
+            <h2>consentimientos</h2>
+            <label for="Autorizacion">Autorizacion para tratameiento medico:</label>
+            <input type="text" name="Autorizacion" id="Autorizacion">
+            <label for="firma">Firma del paciente:</label>
+            <input type="text" name="firma" id="firma">
+            <!--consentimento para compartir informacion medica con otros proveedores de atencion medica-->
+        </div>
+        <div class="metodo">
+            <h2>metodo de pago</h2>
+            <label for="pago">metodo:</label>
+            <select name="efectivo" id="efectivo">
+                <option value="efectivo">efectivo</option>
+                <option value="tarjeta">tarjeta de credito</option>
+                <option value="seguro">seguro</option>
+            </select>
+            <label for="adicional">Informacion adicional sobre el pago:</label>
+            <input type="text" name="adicional" id="adicional">
+        </div>
+    </form>
+</body>
+</html>
